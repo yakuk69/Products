@@ -29,3 +29,14 @@
   </div>
 
 </div>
+<script>
+function buy(product){
+  let number = "919303254746";
+
+  let message = "🛍️ Order Request\n📦 Product: " + product + "\nPlease confirm price & delivery.";
+
+  let url = "https://wa.me/" + number + "?text=" + encodeURIComponent(message);
+
+  window.open(url, "_blank");
+}
+</script>
