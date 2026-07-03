@@ -115,3 +115,14 @@ cursor:pointer;
   <p class="price">₹1999</p>
   <button class="buy" onclick="buy('Smart Watch')">Buy Now</button>
 </div>
+<script>
+function buy(product){
+  const number = "919303254746"; // अपना WhatsApp नंबर
+  const message = "Hello, I want to buy: " + product;
+  const url = "https://wa.me/" + number + "?text=" + encodeURIComponent(message);
+  window.open(url, "_blank");
+}
+</script>
+
+</body>
+</html>
