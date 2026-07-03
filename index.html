@@ -40,3 +40,14 @@ function buy(product){
   window.open(url, "_blank");
 }
 </script>
+function buy(product){
+  let number = "919303254746";
+
+  let message = "Hello, I want to buy this product: " + product;
+
+  let url = "https://wa.me/" + number + "?text=" + encodeURIComponent(message);
+
+  window.open(url, "_blank");<div class="card" onclick="buy('Wireless Earbuds')">
+  <h3>Wireless Earbuds</h3>
+  <p>₹999</p>
+  </div>
